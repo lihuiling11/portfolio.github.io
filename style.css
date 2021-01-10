@@ -1566,7 +1566,7 @@ body .project-active #project-page .project-image:before, body .project-active #
     background-color: rgba(255,255,255, 0.8);
     background-color: black;
     background-color: rgba(67, 77, 67, 0.9);
-    background-color: rgba(66, 100, 244, 0.9);
+    background-color: rgba(66, 100, 244, 1);
     position: fixed;
     top: 0;
     left: 0;
@@ -1583,10 +1583,11 @@ body .project-active #project-page .project-image:before, body .project-active #
   .is-loading p {
     font-family: 'Montreal-medium', 'Helvetica',sans-serif;
     font-size: 34px;
+    padding-bottom: 60px;
     color: white;
     mix-blend-mode: difference;
-    -webkit-animation: pulsate-bck 1s ease-in-out infinite both;
-  	        animation: pulsate-bck 1s ease-in-out infinite both;
+    -webkit-animation: pulsate-bck 1.2s ease-in-out infinite both;
+  	        animation: pulsate-bck 1.2s ease-in-out infinite both;
   }
   /*animazione closing*/
   /* ----------------------------------------------
@@ -1607,8 +1608,8 @@ body .project-active #project-page .project-image:before, body .project-active #
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   100% {
     -webkit-transform: scale(1);
@@ -1621,8 +1622,8 @@ body .project-active #project-page .project-image:before, body .project-active #
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(0.9);
-            transform: scale(0.9);
+    -webkit-transform: scale(0.95);
+            transform: scale(0.95);
   }
   100% {
     -webkit-transform: scale(1);
