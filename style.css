@@ -22,6 +22,23 @@ body {
   padding: 0;
   overflow-x: hidden;
 }
+.block-element {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  z-index: 99999999999;
+  background-color: rgba(0,0,0,0);
+  pointer-events: none !important;
+  opacity: 1;
+  display: none;
+}
+.disattiva-mouse {
+  pointer-events: none !important;
+  display: block !important;
+}
 
 .footer-container {
   width: 100%;
@@ -1557,7 +1574,7 @@ body .project-active #project-page .project-image:before, body .project-active #
     opacity: 0;
     /*opacity: 1;*/
     overflow: hidden;
-    transition: opacity 0.8s ease-in-out;
+    transition: opacity 1.8s ease-in-out;
   }
   .is-transitioning {
     display: flex !important;

@@ -112,7 +112,7 @@ function bravoFooter(){
 
 //funzione per il responsive
 function isDesktop() {
-  if(window.innerWidth > 768){
+  if(window.innerWidth > 900){
     //console.log("siamo su desktop");
     return true;
   }else {

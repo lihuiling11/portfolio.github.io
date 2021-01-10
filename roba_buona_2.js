@@ -406,7 +406,12 @@ $( document ).ready(function() {
         });
       } else {
         //animazione per mobile
-        gsap.timeline()
+        gsap.timeline({
+          onStart() {
+            document.querySelector(".block-element").classList.add('disattiva-mouse');
+          },onComplete() {
+            document.querySelector(".block-element").classList.remove('disattiva-mouse');}
+          })
         .to(clone, {
             //duration: 1.6,
             duration: 0.5,
@@ -795,7 +800,11 @@ $( document ).ready(function() {
       const websiteProggett = clone.querySelector(".project-website");
 
       const loadingoggetto = document.querySelector(".is-loading");
+      //modifico il colore
+      var colorBackgroundLoad = getColorLoading(nomeProggett.innerHTML)
+      loadingoggetto.style.backgroundColor = colorBackgroundLoad;
       const paragrafoLoading = document.querySelector(".is-loading p");
+
       gsap.timeline({
         onStart() {
           paragrafoLoading.innerHTML = "Closing Project";
@@ -1107,4 +1116,40 @@ function getProjMobInfo(idDelProgetto) {
 
   return oggettoConInfo;
 
+}
+
+function getColorLoading(nameParameter){
+  var colorBgLoading = '#00817C';
+
+  if(nameParameter == "Museo Madre"){
+    colorBgLoading = '#4264F4';
+  }
+  if(nameParameter == "Italics"){
+    colorBgLoading = '#098B3C';
+  }
+  if(nameParameter == "Magneti Marelli"){
+    colorBgLoading = '#FF9E55';
+  }
+  if(nameParameter == "COMBO"){
+    colorBgLoading = '#1B2B5F';
+  }
+  if(nameParameter == "Icon Design Talks"){
+    colorBgLoading = '#9F0505';
+  }
+  if(nameParameter == "Galleria Raffaella Cortese"){
+    colorBgLoading = '#FFC936';
+  }
+  if(nameParameter == "GS1: Osservatorio Immagino"){
+    colorBgLoading = '#5F2FFF';
+  }
+  if(nameParameter == "Maxxi&Bulgari Prize"){
+    colorBgLoading = '#00817C';
+  }
+  if(nameParameter == "Land Convention 2019"){
+    colorBgLoading = '#332D00';
+  }
+  if(nameParameter == "Leftloft"){
+    colorBgLoading = '#FF6F55';
+  }
+  return colorBgLoading;
 }
