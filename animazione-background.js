@@ -37,8 +37,8 @@ function animazioneSfondo () {
   //var heightLimite = $('.bg-animation').outerHeight();
 
   //disattivo un sec
-  //section.style.height = heightLimite;
-  //section.style.width = widthLimite;
+  section.style.height = heightLimite;
+  section.style.width = widthLimite;
 
   // Logo moving velocity Variables
   //posizioni iniziali

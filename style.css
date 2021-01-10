@@ -41,7 +41,9 @@ body {
   min-height: 100vh;
   margin: 0;
   padding: 40px 40px 0 40px;
+  overflow: hidden;
   box-sizing: border-box;
+  position: relative;
 }
 .home-bg-container {
   width: 100%;
@@ -856,7 +858,7 @@ body .project-active #project-page .project-image:before, body .project-active #
 }
 
 /*stile solo desktop */
-@media only screen and (min-width: 767px) {
+@media only screen and (min-width: 899px) {
   .des-hidden {
     display: none !important;
   }
@@ -864,7 +866,7 @@ body .project-active #project-page .project-image:before, body .project-active #
 
 
 /*stile responsive*/
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 900px) {
   .mob-hidden {
     display: none !important;
   }
@@ -885,7 +887,8 @@ body .project-active #project-page .project-image:before, body .project-active #
     height: 210%;
     position: absolute;
   }
-  .shape-bg-1 {
+  .shape-bg-1,
+   .shape-bgmb-1 {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -897,7 +900,8 @@ body .project-active #project-page .project-image:before, body .project-active #
     mix-blend-mode: difference;
     transition: opacity 1s ease-out;
   }
-  .shape-bg-2 {
+  .shape-bg-2,
+  .shape-bgmb-2  {
     position: absolute;
     top: 0px;
     left: 0px;
@@ -908,7 +912,8 @@ body .project-active #project-page .project-image:before, body .project-active #
     pointer-events: none;
     transition: opacity 1s ease-out;
   }
-  .shape-bg-3 {
+  .shape-bg-3,
+  .shape-bgmb-3  {
     position: absolute;
     top: 0px;
     left: 0px;
