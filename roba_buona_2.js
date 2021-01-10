@@ -236,6 +236,7 @@ $( document ).ready(function() {
             transformOrigin: '50% 0%'
         }, {
             x: 0,
+            display: "block",
             autoAlpha: 1,
             scale: 1,
             duration: 2,
