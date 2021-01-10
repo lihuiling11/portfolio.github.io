@@ -1,14 +1,32 @@
 //$( document ).ready(function() {
 let homeInSchermo = true;
 
+window.onload = function() {
+  console.log("starting background animation");
+  animazioneSfondo();
+}
 
 function animazioneSfondo () {
   const section = document.querySelector(".bg-animation");
 
-  const logo = document.querySelector(".shape-bg-1");
-  const logo2 = document.querySelector(".shape-bg-2");
-  const logo3 = document.querySelector(".shape-bg-3");
+  //const logo = document.querySelector(".shape-bg-1");
+  //const logo2 = document.querySelector(".shape-bg-2");
+  //const logo3 = document.querySelector(".shape-bg-3");
   //$(".shape-bg-1").css('opacity',1);
+
+  var logo;
+  var logo2;
+  var logo3;
+  if(isDesktop()){
+    logo = document.querySelector(".shape-bg-1");
+    logo2 = document.querySelector(".shape-bg-2");
+    logo3 = document.querySelector(".shape-bg-3");
+  } else {
+    logo = document.querySelector(".shape-bgmb-1");
+    logo2 = document.querySelector(".shape-bgmb-2");
+    logo3 = document.querySelector(".shape-bgmb-3");
+
+  }
 
   //const FPS = 60;
   //const FPS = 30;
