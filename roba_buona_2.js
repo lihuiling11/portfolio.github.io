@@ -422,7 +422,8 @@ $( document ).ready(function() {
             //ease: Expo.easeOut
         }, "scaleFS")
         .to(title, {
-            x: 40,
+            //x: 40,
+            left: 55,
             fontSize: gotMobFontSize,
             marginTop: gotMobMarginTop,
             ease: "none"
