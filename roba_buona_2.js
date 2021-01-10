@@ -912,7 +912,12 @@ $( document ).ready(function() {
       const websiteProggett = clone.querySelector(".project-website");
 
       const loadingoggetto = document.querySelector(".is-loading");
-      const paragrafoLoading = document.querySelector(".is-loading p");
+      const paragrafoLoading = document.querySelector(".is-loading p")
+
+      //modifico il colore
+      var colorBackgroundLoad = getColorLoading(nomeProggett.innerHTML)
+      loadingoggetto.style.backgroundColor = colorBackgroundLoad;
+
       gsap.timeline({
         onStart() {
           paragrafoLoading.innerHTML = "Loading project";
