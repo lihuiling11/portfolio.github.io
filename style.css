@@ -149,7 +149,7 @@ body {
   background: red;
 }
 .home-container p.contacts-home{
-  margin: 0;
+  /* margin: 0; */
 }
 .home-container p a {
   color: inherit !important;
