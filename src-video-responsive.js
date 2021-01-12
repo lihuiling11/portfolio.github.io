@@ -1,8 +1,10 @@
 //assegno le src dinamicamente
 if(window.innerWidth > 900){
     //add higher quality srcs
-    /*
+
     document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/MuseoMadreNapoli.mp4";
+    document.getElementById('video-preview-madre').play();
+    /*
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/italics.mp4";
     document.getElementById('video-preview-mm').querySelector('source').src = "assets/video-preview/mm.mp4";
     document.getElementById('video-preview-combo').querySelector('source').src = "assets/video-preview/combo-2.mp4";
@@ -15,11 +17,16 @@ if(window.innerWidth > 900){
     */
 }else {
   //add lower quality srcs
+    /*
     var videini = document.getElementById('projects').querySelectorAll('.proj-video-preview');
 
     videini.forEach(function(videoSingolo) {
         videoSingolo.querySelector('.mob-hidden').remove();
     });
+    */
+    
+    document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/mob/italics.mp4";
+    document.getElementById('video-preview-madre').play();
     /*
     #projects #proj-madre .proj-video-preview
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/mob/italics.mp4";
