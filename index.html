@@ -154,9 +154,9 @@
       </a>
       <div class="proj-video-preview">
         <video autoplay muted loop playsinline id="video-preview-italics">
-            <source clas="mob-hidden" src="assets/video-preview/italics.mp4" type="video/mp4">
-            <source clas="des-hidden" src="assets/video-preview/mob/italics.mp4" type="video/mp4">
-            <source clas="des-hidden" src="assets/video-preview/mob/italics.webm" type="video/webm">
+            <source class="mob-hidden" src="assets/video-preview/italics.mp4" type="video/mp4">
+            <source class="des-hidden" src="assets/video-preview/mob/italics.mp4" type="video/mp4">
+            <source class="des-hidden" src="assets/video-preview/mob/italics.webm" type="video/webm">
             Your browser does not support HTML5 video.
         </video>
       </div>
@@ -353,9 +353,12 @@
       <h2 class="project-close"><span class="mob-hidden">close</span><img class="des-hidden" src="svg/close.svg" alt="x"></h2>
       <a class="project-website proj-visit-web-link" href="" target="_blank"></a>
       <div class="proj-video-preview">
-        <video autoplay muted loop playsinline id="video-preview-icon">
-          <source class="mob-hidden" src="assets/video-preview/icon.mp4" type="video/mp4">
-          <source class="des-hidden" src="assets/video-preview/mob/icon.mp4" type="video/mp4">
+        <video autoplay muted loop playsinline id="video-preview-icon" class="mob-hidden">
+          <source src="assets/video-preview/icon.mp4" type="video/mp4">
+            Your browser does not support HTML5 video.
+        </video>
+        <video autoplay muted loop playsinline id="video-preview-icon-mob" class="des-hidden">
+          <source src="assets/video-preview/mob/icon.mp4" type="video/mp4">
             Your browser does not support HTML5 video.
         </video>
       </div>
