@@ -1,9 +1,12 @@
 //assegno le src dinamicamente
 if(window.innerWidth > 900){
     //add higher quality srcs
-
-    document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/museomadrenapoli.mp4";
-    document.getElementById('video-preview-madre').play();
+    var source1 = document.createElement('source');
+    source1.setAttribute('src', '/assets/video-preview/museomadrenapoli.mp4');
+    source1.setAttribute('type', 'video/mp4');
+    var video1 = document.getElementById('video-preview-madre');
+    video1.appendChild(source1);
+    video1.play();
     /*
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/italics.mp4";
     document.getElementById('video-preview-mm').querySelector('source').src = "assets/video-preview/mm.mp4";
@@ -25,8 +28,12 @@ if(window.innerWidth > 900){
     });
     */
 
-    document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/mob/museomadrenapoli.mp4";
-    document.getElementById('video-preview-madre').play();
+    var source1 = document.createElement('source');
+    source1.setAttribute('src', '/assets/video-preview/mob/museomadrenapoli.mp4');
+    source1.setAttribute('type', 'video/mp4');
+    var video1 = document.getElementById('video-preview-madre');
+    video1.appendChild(source1);
+    video1.play();
     /*
     #projects #proj-madre .proj-video-preview
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/mob/italics.mp4";
