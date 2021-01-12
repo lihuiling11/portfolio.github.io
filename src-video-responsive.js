@@ -25,7 +25,7 @@ if(window.innerWidth > 900){
     });
     */
 
-    document.getElementById('video-preview-madre').querySelector('source').src = "museomadrenapoli.mp4";
+    document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/mob/museomadrenapoli.mp4";
     document.getElementById('video-preview-madre').play();
     /*
     #projects #proj-madre .proj-video-preview
