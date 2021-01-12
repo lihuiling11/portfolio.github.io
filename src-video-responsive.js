@@ -1,6 +1,7 @@
 //assegno le src dinamicamente
 if(window.innerWidth > 900){
     //add higher quality srcs
+    /*
     document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/MuseoMadreNapoli.mp4";
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/italics.mp4";
     document.getElementById('video-preview-mm').querySelector('source').src = "assets/video-preview/mm.mp4";
@@ -11,9 +12,20 @@ if(window.innerWidth > 900){
     document.getElementById('video-preview-maxxi').querySelector('source').src = "assets/video-preview/maxxi.mp4";
     document.getElementById('video-preview-land').querySelector('source').src = "assets/video-preview/land.mp4";
     document.getElementById('video-preview-lft').querySelector('source').src = "assets/video-preview/lft.mp4";
+    */
 }else {
   //add lower quality srcs
-    document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/mob/MuseoMadreNapoli.mp4";
+    var videini = document.getElementById('projects').querySelectorAll('.proj-video-preview');
+
+    videini.forEach(function(videoSingolo) {
+        console.log("prima era cosi");
+        console.log(videoSingolo);
+        videoSingolo.querySelector('.mob-hidden').remove();
+        console.log("rimosso il video des");
+        console.log(videoSingolo);
+    });
+    /*
+    #projects #proj-madre .proj-video-preview
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/mob/italics.mp4";
     document.getElementById('video-preview-mm').querySelector('source').src = "assets/video-preview/mob/mm.mp4";
     document.getElementById('video-preview-combo').querySelector('source').src = "assets/video-preview/mob/combo-2.mp4";
@@ -23,4 +35,5 @@ if(window.innerWidth > 900){
     document.getElementById('video-preview-maxxi').querySelector('source').src = "assets/video-preview/mob/maxxi.mp4";
     document.getElementById('video-preview-land').querySelector('source').src = "assets/video-preview/mob/land.mp4";
     document.getElementById('video-preview-lft').querySelector('source').src = "assets/video-preview/mob/lft.mp4";
+    */
 }
