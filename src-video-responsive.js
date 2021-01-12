@@ -18,11 +18,7 @@ if(window.innerWidth > 900){
     var videini = document.getElementById('projects').querySelectorAll('.proj-video-preview');
 
     videini.forEach(function(videoSingolo) {
-        console.log("prima era cosi");
-        console.log(videoSingolo);
         videoSingolo.querySelector('.mob-hidden').remove();
-        console.log("rimosso il video des");
-        console.log(videoSingolo);
     });
     /*
     #projects #proj-madre .proj-video-preview
