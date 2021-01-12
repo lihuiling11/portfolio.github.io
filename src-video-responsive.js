@@ -2,7 +2,7 @@
 if(window.innerWidth > 900){
     //add higher quality srcs
 
-    document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/MuseoMadreNapoli.mp4";
+    document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/museomadrenapoli.mp4";
     document.getElementById('video-preview-madre').play();
     /*
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/italics.mp4";
@@ -24,8 +24,8 @@ if(window.innerWidth > 900){
         videoSingolo.querySelector('.mob-hidden').remove();
     });
     */
-    
-    document.getElementById('video-preview-madre').querySelector('source').src = "assets/video-preview/mob/italics.mp4";
+
+    document.getElementById('video-preview-madre').querySelector('source').src = "museomadrenapoli.mp4";
     document.getElementById('video-preview-madre').play();
     /*
     #projects #proj-madre .proj-video-preview
