@@ -1,6 +1,7 @@
 //assegno le src dinamicamente
 if(window.innerWidth > 900){
     //add higher quality srcs
+    /*
     var source1 = document.createElement('source');
     source1.setAttribute('src', '/assets/video-preview/museomadrenapoli.mp4');
     source1.setAttribute('type', 'video/mp4');
@@ -70,6 +71,7 @@ if(window.innerWidth > 900){
     var video10 = document.getElementById('video-preview-lft');
     video10.appendChild(source10);
     video10.play();
+    */
     /*
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/italics.mp4";
     document.getElementById('video-preview-mm').querySelector('source').src = "assets/video-preview/mm.mp4";
@@ -90,7 +92,7 @@ if(window.innerWidth > 900){
         videoSingolo.querySelector('.mob-hidden').remove();
     });
     */
-
+    /*
     var source1 = document.createElement('source');
     source1.setAttribute('src', '/assets/video-preview/mob/museomadrenapoli.mp4');
     source1.setAttribute('type', 'video/mp4');
@@ -160,6 +162,7 @@ if(window.innerWidth > 900){
     var video10 = document.getElementById('video-preview-lft');
     video10.appendChild(source10);
     video10.play();
+    */
     /*
     #projects #proj-madre .proj-video-preview
     document.getElementById('video-preview-italics').querySelector('source').src = "assets/video-preview/mob/italics.mp4";
