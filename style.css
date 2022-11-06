@@ -149,7 +149,6 @@ body {
   z-index: 2;
   position: relative;
   color: white;
-  mix-blend-mode: difference;
   /**/
   mix-blend-mode: normal;
   font-size: 4rem;
