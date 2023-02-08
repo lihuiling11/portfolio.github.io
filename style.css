@@ -138,6 +138,12 @@ body {
 .video-bg-container {
   height: 100%;
   width: auto;
+  width:100%;
+}
+.video-bg-container video {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
 }
 .home-container p,
 .footer-container p {
