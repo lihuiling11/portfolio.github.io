@@ -92,6 +92,7 @@ $( document ).ready(function() {
     };
 });
 //funzione per il bravo footer
+/*
 function bravoFooter(){
   //mail icon copia indirizzo mail
   $("#mail-icon-footer").click(function(){
@@ -106,7 +107,7 @@ function bravoFooter(){
     $("#copy-link-footer").html(" bravo!");
     $("#copy-link-footer").addClass("bravo-on");
   });
-}
+}*/
 
 
 
