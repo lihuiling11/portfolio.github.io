@@ -430,6 +430,7 @@ footer h1 {
   position: relative;
   width: 100%;
   height: auto;
+  font-weight: 500;
 }
 .project-card-item img,
 .project-card-item video {
@@ -896,7 +897,7 @@ body.black-bg .text-black {
   pointer-events: none;
 }
 .project-card-item-info {
-  font-weight: 400;
+  font-weight: 500;
 }
 
 .related-projects-container .topolino-arrow {
@@ -1016,6 +1017,7 @@ body.black-bg .text-black {
   color: var(--bg-white);
   mix-blend-mode: difference;
   -webkit-transform: translate3d(0,0,99999px);
+  font-weight: 500;
 }
 
 .top-header .name-col {
