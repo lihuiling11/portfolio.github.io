@@ -231,15 +231,15 @@ if(cursorCustom){
 if(cursorCustom && projCardLinks) {
   projCardLinks.forEach(link => {
     link.addEventListener('mouseenter', () => {
-      //if (window.innerWidth > 600) {
-        cursorCustom.classList.remove('cursor-active');
-      //}
+      if (window.innerWidth > 600) {
+        cursorCustom.classList.add('cursor-active');
+      }
     });
 
     link.addEventListener('mouseleave', () => {
-      //if (window.innerWidth > 600) {
+      if (window.innerWidth > 600) {
         cursorCustom.classList.remove('cursor-active');
-      //}
+      }
       
     });
   });
