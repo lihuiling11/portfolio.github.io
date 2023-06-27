@@ -339,11 +339,11 @@ function startDVDscreensaver() {
       clearTimeout(inactivityTimeoutId);
       clearTimeout(timeoutId);
       removeDVDImages();
-      inactivityTimeoutId = setTimeout(startScreensaver, 100000); // Restart screensaver after 10 seconds of inactivity
+      inactivityTimeoutId = setTimeout(startScreensaver, 300000); // Restart screensaver after 10 seconds of inactivity
     }
 
     // Start the initial inactivity timeout
-    inactivityTimeoutId = setTimeout(startScreensaver, 100000); // Start screensaver after 10 seconds of inactivity
+    inactivityTimeoutId = setTimeout(startScreensaver, 300000); // Start screensaver after 10 seconds of inactivity
 
     // Add event listeners to detect user activity
     document.addEventListener('keydown', stopScreensaver);
