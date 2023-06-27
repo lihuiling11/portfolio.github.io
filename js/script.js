@@ -320,7 +320,7 @@ function startDVDscreensaver() {
   // Generate DVD images with a delay between each
   function generateDVDImagesWithDelay() {
     generateDVDImage();
-    timeoutId = setTimeout(generateDVDImagesWithDelay, 2000); // Delay in milliseconds (1 second)
+    timeoutId = setTimeout(generateDVDImagesWithDelay, 4000); // Delay in milliseconds (1 second)
   }
 
   // Start the screensaver when the page is loaded
