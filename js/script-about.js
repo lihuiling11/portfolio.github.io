@@ -37,28 +37,3 @@ document.querySelector('.bottom-nav').addEventListener('mouseleave', () => {
 resetHighlight();
 
 
-//copy to clipboard
-function copyEmailToClipboard() {
-  var emailElement = this; // The clicked element
-  var email = "huiling.li.cn@gmail.com" // Get the email address from the element
-
-  // Add email to clipboard
-  navigator.clipboard.writeText(email)
-    .then(function() {
-      // Successful copy
-      emailElement.classList.add('active');
-      setTimeout(function() {
-        emailElement.classList.remove('active');
-      }, 2000); // Remove 'active' class after 3 seconds
-    })
-    .catch(function(err) {
-      // Error handling
-      console.error('Failed to copy email to clipboard: ', err);
-    });
-}
-
-// Add event listeners to all elements with class "email-clipboard"
-var emailElements = document.querySelectorAll('.email-clipboard');
-emailElements.forEach(function(element) {
-  element.addEventListener('click', copyEmailToClipboard);
-});
