@@ -60,6 +60,7 @@ h5 {
   color: var(--bg-white);
   mix-blend-mode: difference;
   -webkit-transform: translate3d(0,0,99999px);
+  font-weight: 500;
 }
 
 .small-project-name {
