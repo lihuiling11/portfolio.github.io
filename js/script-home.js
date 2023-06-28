@@ -1,5 +1,6 @@
 
 //autoscroll
+/*
 function autoScroll() {
     const scrollStep = .5; // Adjust the scroll step as needed
     const scrollInterval = 15; // Adjust the scroll interval (in milliseconds) as needed
@@ -55,7 +56,66 @@ function autoScroll() {
   
   autoScroll();
 
-  
+
+
+*/
+
+
+
+
+////////////////////
+
+function autoScroll() {
+  const scrollDistance = 1; // Adjust the scroll distance as needed
+  const scrollDelay = 10; // Adjust the scroll delay (in milliseconds) as needed
+
+  let isHovered = false;
+  let isScrolling = false;
+
+  const scrollPage = () => {
+    if (!isHovered && !isScrolling) {
+      window.scrollBy(0, scrollDistance);
+      if (window.pageYOffset >= document.documentElement.scrollHeight - window.innerHeight) {
+        // Optional: Perform any desired action after reaching the bottom of the page
+        clearInterval(interval);
+      }
+    }
+  };
+
+  const interval = setInterval(scrollPage, scrollDelay);
+
+  const hoverElements = document.querySelectorAll('.project-card-item .lazy-img');
+  hoverElements.forEach(element => {
+    element.addEventListener('mouseover', () => {
+      isHovered = true;
+    });
+    element.addEventListener('mouseout', () => {
+      isHovered = false;
+    });
+  });
+
+  let timeout;
+  const scrollHandler = () => {
+    isScrolling = true;
+    clearTimeout(timeout);
+
+    timeout = setTimeout(() => {
+      isScrolling = false;
+      scrollPage();
+    }, 20); // Adjust the scroll timeout as needed
+  };
+
+  window.addEventListener('scroll', scrollHandler);
+}
+
+autoScroll();
+
+
+
+
+
+
+////////////////
 
 //navabar hover
 const navItems = document.querySelectorAll('.bottom-nav-item');
