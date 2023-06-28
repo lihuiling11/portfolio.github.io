@@ -65,6 +65,8 @@ function autoScroll() {
 
 ////////////////////
 
+
+
 function autoScroll() {
   const scrollDistance = 1; // Adjust the scroll distance as needed
   const scrollDelay = 10; // Adjust the scroll delay (in milliseconds) as needed
@@ -102,7 +104,7 @@ function autoScroll() {
     timeout = setTimeout(() => {
       isScrolling = false;
       scrollPage();
-    }, 20); // Adjust the scroll timeout as needed
+    }, 22); // Adjust the scroll timeout as needed
   };
 
   window.addEventListener('scroll', scrollHandler);
@@ -114,8 +116,11 @@ autoScroll();
 
 
 
-
 ////////////////
+
+
+
+
 
 //navabar hover
 const navItems = document.querySelectorAll('.bottom-nav-item');
