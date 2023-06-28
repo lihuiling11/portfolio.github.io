@@ -68,8 +68,14 @@ function autoScroll() {
 
 
 function autoScroll() {
-  const scrollDistance = 1; // Adjust the scroll distance as needed
+  let scrollDistance = 0.5; // Adjust the scroll distance as needed
   const scrollDelay = 10; // Adjust the scroll delay (in milliseconds) as needed
+
+
+  if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
+    scrollDistance = 1; // Use a different scroll step for Safari
+  }
+
 
   let isHovered = false;
   let isScrolling = false;
@@ -97,6 +103,13 @@ function autoScroll() {
   });
 
   let timeout;
+  let timeoutTime = 24;
+  if (navigator.userAgent.indexOf('Safari') !== -1 && navigator.userAgent.indexOf('Chrome') === -1) {
+    timeoutTime = 20; // Use a different scroll step for Safari
+  }
+
+
+
   const scrollHandler = () => {
     isScrolling = true;
     clearTimeout(timeout);
@@ -104,7 +117,7 @@ function autoScroll() {
     timeout = setTimeout(() => {
       isScrolling = false;
       scrollPage();
-    }, 22); // Adjust the scroll timeout as needed
+    }, timeoutTime); // Adjust the scroll timeout as needed
   };
 
   window.addEventListener('scroll', scrollHandler);
