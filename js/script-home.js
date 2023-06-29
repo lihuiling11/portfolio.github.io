@@ -184,8 +184,10 @@ const docElement = document.documentElement;
 
 // Get the project card element
 
+
+
 const projectCard1 = document.querySelector('.project-card-1 .lazy-img');
-if (projectCard1) {
+if (projectCard1 && window.innerWidth > 600) {
     // Add event listener for hover
     projectCard1.addEventListener('mouseenter', () => {
         body.classList.add('yellow-bg');
@@ -200,7 +202,7 @@ if (projectCard1) {
 
 
 const projectCard2 = document.querySelector('.project-card-2 .lazy-img');
-if (projectCard2) {
+if (projectCard2 && window.innerWidth > 600) {
     projectCard2.addEventListener('mouseenter', () => {
         body.classList.add('black-bg');
         docElement.classList.add('black-bg');
@@ -213,7 +215,7 @@ if (projectCard2) {
 }
 
 const projectCard3 = document.querySelector('.project-card-3 .lazy-img');
-if (projectCard3) {
+if (projectCard3 && window.innerWidth > 600) {
     projectCard3.addEventListener('mouseenter', () => {
         body.classList.add('red-bg');
         docElement.classList.add('red-bg');
@@ -227,7 +229,7 @@ if (projectCard3) {
 
 
 const projectCard4 = document.querySelector('.project-card-4 .lazy-img');
-if (projectCard4) {
+if (projectCard4 && window.innerWidth > 600) {
     projectCard4.addEventListener('mouseenter', () => {
         body.classList.add('yellow2-bg');
         docElement.classList.add('yellow2-bg');
@@ -240,7 +242,7 @@ if (projectCard4) {
 }
 
 const projectCard5 = document.querySelector('.project-card-5 .lazy-img');
-if (projectCard5) {
+if (projectCard5 && window.innerWidth > 600) {
     projectCard5.addEventListener('mouseenter', () => {
         body.classList.add('lilac-bg');
         docElement.classList.add('lilac-bg');
@@ -253,7 +255,7 @@ if (projectCard5) {
 }
 
 const projectCard6 = document.querySelector('.project-card-6 .lazy-img');
-if (projectCard6) {
+if (projectCard6 && window.innerWidth > 600) {
     projectCard6.addEventListener('mouseenter', () => {
         body.classList.add('dark-sand-bg');
         docElement.classList.add('dark-sand-bg');
@@ -266,7 +268,7 @@ if (projectCard6) {
 }
 
 const projectCard7 = document.querySelector('.project-card-7 .lazy-img');
-if (projectCard7) {
+if (projectCard7 && window.innerWidth > 600) {
     projectCard7.addEventListener('mouseenter', () => {
         body.classList.add('pitch-black-bg');
         docElement.classList.add('pitch-black-bg');
@@ -279,7 +281,7 @@ if (projectCard7) {
 }
 
 const projectCard8 = document.querySelector('.project-card-8 .lazy-img');
-if (projectCard8) {
+if (projectCard8 && window.innerWidth > 600) {
     projectCard8.addEventListener('mouseenter', () => {
         body.classList.add('gold-bg');
         docElement.classList.add('gold-bg');
@@ -292,7 +294,7 @@ if (projectCard8) {
 }
 
 const projectCard9 = document.querySelector('.project-card-9 .lazy-img');
-if (projectCard9) {
+if (projectCard9 && window.innerWidth > 600) {
     projectCard9.addEventListener('mouseenter', () => {
         body.classList.add('bright-red-bg');
         docElement.classList.add('bright-red-bg');
@@ -305,7 +307,7 @@ if (projectCard9) {
 }
 
 const projectCard10 = document.querySelector('.project-card-10 .lazy-img');
-if (projectCard10) {
+if (projectCard10 && window.innerWidth > 600) {
     projectCard10.addEventListener('mouseenter', () => {
         body.classList.add('salmon-bg');
         docElement.classList.add('salmon-bg');
@@ -318,7 +320,7 @@ if (projectCard10) {
 }
 
 const projectCard11 = document.querySelector('.project-card-11 .lazy-img');
-if (projectCard11) {
+if (projectCard11 && window.innerWidth > 600) {
     projectCard11.addEventListener('mouseenter', () => {
         body.classList.add('purple-bg');
         docElement.classList.add('purple-bg');
@@ -331,7 +333,7 @@ if (projectCard11) {
 }
 
 const projectCard12 = document.querySelector('.project-card-12 .lazy-img');
-if (projectCard12) {
+if (projectCard12 && window.innerWidth > 600) {
     projectCard12.addEventListener('mouseenter', () => {
         body.classList.add('lilac2-bg');
         docElement.classList.add('lilac2-bg');
