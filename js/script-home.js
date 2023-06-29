@@ -123,9 +123,11 @@ function autoScroll() {
   window.addEventListener('scroll', scrollHandler);
 }
 
-autoScroll();
 
 
+if (window.innerWidth > 600) {
+  autoScroll(); // Start scrolling automatically
+}
 
 
 
