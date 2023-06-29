@@ -1810,7 +1810,7 @@ footer {
   .big-paragraph-about {
     font-size: var(--base-font-size);
     letter-spacing: -0.01em;
-    line-height: calc(var(--baseline) * 1);
+    line-height: calc(var(--baseline) * .85);
     font-weight: 500;
   }
   .absolute-title {
